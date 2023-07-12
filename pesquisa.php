@@ -31,7 +31,7 @@ echo"<hr>";
 <body>
 
     <header class="container">
-        <h1>Pesquisar</h1>
+        <h1>Pesquisar Cadastros</h1>
     </header>
 
     <div class="container">
