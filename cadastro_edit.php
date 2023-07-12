@@ -59,7 +59,7 @@
                         <input type="date" class="form-control" name="data_nascimento" value="<?php echo $linha['data_nascimento'];?>">              
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-success"value="Salvar Alterações"> 
+                        <input type="submit" class="btn btn-success"value="Salvar Alterações" action="edit_script.php" method="POST"> 
                         <a href="pesquisa.php" class="btn btn-info">Voltar</a>             
                     </div>
                     
