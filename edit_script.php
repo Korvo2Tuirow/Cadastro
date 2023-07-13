@@ -31,7 +31,7 @@
                 VALUES ('$nome','$password','$endereco','$telefone','$email','$data_nascimento')";*/
 
                 $sql = "UPDATE  pessoas set
-                nome = '$nome', password = '$password', endereco = '$endereco', telefone = '$telefone', email ='$email', data_nascimento = '$data_nascimento' WHERE cod_pessoa = $id;"; 
+                nome = '$nome', password = '$password', endereco = '$endereco', telefone = '$telefone', email ='$email', data_nascimento = '$data_nascimento' WHERE cod_pessoa = $id and adm = 1;"; 
                 
 
             if (mysqli_query($conn, $sql)) {
