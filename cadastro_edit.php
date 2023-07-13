@@ -13,7 +13,7 @@
     <?php 
 
     include "conn.php";
-    $id =$_GET["id"] ?? '';
+    $id =$_GET['id'] ?? '';
     $slq = "SELECT * FROM pessoas WHERE cod_pessoa = $id";
     $dados = mysqli_query($conn, $slq);
 
@@ -33,7 +33,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form action="cadastro_script.php" method="POST">
+                <form action="edit_script.php" method="POST">
                     <div class="form-group">
                         <label for="nome">Nome</label>
                         <input type="text" class="form-control" name="nome" required value="<?php echo $linha['nome'];?>">              
@@ -59,7 +59,8 @@
                         <input type="date" class="form-control" name="data_nascimento" value="<?php echo $linha['data_nascimento'];?>">              
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-success"value="Salvar Alterações" action="edit_script.php?id=$id" method="POST"> 
+                        <input type="submit" class="btn btn-success"value="Salvar Alterações">
+                        <input type="hidden" name="id" value="<?php echo $linha['cod_pessoa']?>" />
                         <a href="pesquisa.php" class="btn btn-info">Voltar</a>             
                     </div>
                     

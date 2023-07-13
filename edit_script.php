@@ -30,14 +30,14 @@
                 (`nome`, `password`, `endereco`, `telefone`, `email`, `data_nascimento`) 
                 VALUES ('$nome','$password','$endereco','$telefone','$email','$data_nascimento')";*/
 
-                $sql = "UPDATE `pessoas`SET
-                `nome` = '$nome', `password` = '$password', `endereco` = '$endereco', `telefone` = '$telefone', `email` ='$email', `data_nascimento` = '$data_nascimento' WHERE `cod_pessoa` = $id;"; 
+                $sql = "UPDATE  pessoas set
+                nome = '$nome', password = '$password', endereco = '$endereco', telefone = '$telefone', email ='$email', data_nascimento = '$data_nascimento' WHERE cod_pessoa = $id;"; 
                 
 
             if (mysqli_query($conn, $sql)) {
-                mensagem("$nome cadastrado com sucesso!", 'success');
+                mensagem("Cadastro editado com sucesso!", 'success');
             } else {
-                mensagem("$nome Não cadastrado!", 'dunger');
+                mensagem("Erro na edição do cadastrado!", 'dunger');
             };
 
             ?>

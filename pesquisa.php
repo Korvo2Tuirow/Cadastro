@@ -80,7 +80,7 @@ echo"<hr>";
                               <td>$email</td>
                               <td>$data_nascimento</td>
                               <td><a href='cadastro_edit.php?id=$id' class='btn btn-success'>Editar</a></td>
-                              <td><a href='#' class='btn btn-danger'>Excluir</a></td>
+                              <td><a href='#' class='btn btn-danger' data-toggle='modal' data-target='#modal_confirma'>Excluir</a></td>
                               </tr>";
                     };
 
@@ -93,6 +93,31 @@ echo"<hr>";
         <a href="index.php" class="btn btn-info">Voltar</a>
 
     </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal_confirma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Confirmar Exclusão</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="excluir.php" method="POST"></form>
+        <p>Deseja realmente excluir?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <input type="submit" class="btn btn-danger" value="Excluir">
+                </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
