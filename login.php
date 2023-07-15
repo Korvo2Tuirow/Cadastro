@@ -1,3 +1,36 @@
+<?php 
+include "conn.php";
+   
+if(isset($_POST['email']) || isset($_POST['senha'])){
+    if(strlen($_POST['email'])== 0){
+    echo "<script> alert('Preencha seu E-mail');</script>";
+    }else if(strlen($_POST['senha'])== 0){
+            echo "<script> alert('Coloque sua senha');</script>";
+    }else{
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+
+        $sql_code = "SELECT * FROM pessoas WHERE email = '$email' AND `password` = '$senha';";
+
+        $sql_query = mysqli_query($conn, $sql_code);
+
+        $quantidade = $sql_query->num_rows;
+
+        if($quantidade == 1) {
+            echo "OK";
+        }else{
+            echo "<script> alert('E-mail ou senha incorretos');</script>";
+        };
+    };
+};
+
+
+
+
+
+
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,7 +48,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <form action="login_script.php" method="POST">
+                <form action="" method="POST">
 
                 <label for="email">E-mail</label>
                 <input type="text" name="email">
