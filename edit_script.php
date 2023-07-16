@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <?php include 'navbar.php'; ?>
     <header>
         <h1>Edição do Cadastro</h1>
     </header>
@@ -30,9 +31,9 @@
                 (`nome`, `password`, `endereco`, `telefone`, `email`, `data_nascimento`) 
                 VALUES ('$nome','$password','$endereco','$telefone','$email','$data_nascimento')";*/
 
-                $sql = "UPDATE  pessoas set
-                nome = '$nome', password = '$password', endereco = '$endereco', telefone = '$telefone', email ='$email', data_nascimento = '$data_nascimento' WHERE cod_pessoa = $id and adm = 1;"; 
-                
+            $sql = "UPDATE  pessoas set
+                nome = '$nome', password = '$password', endereco = '$endereco', telefone = '$telefone', email ='$email', data_nascimento = '$data_nascimento' WHERE cod_pessoa = $id and adm = 1;";
+
 
             if (mysqli_query($conn, $sql)) {
                 mensagem("Cadastro editado com sucesso!", 'success');

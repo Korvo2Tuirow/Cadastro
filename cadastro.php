@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <?php include 'navbar.php'; ?>
     <header class="container">
         <h1>Cadastro</h1>
     </header>
@@ -19,44 +20,44 @@
                 <form action="cadastro_script.php" method="POST">
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <input type="text" class="form-control" name="nome" required>              
+                        <input type="text" class="form-control" name="nome" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" name="password" >
+                        <input type="password" class="form-control" name="password">
                     </div>
                     <div class="form-group">
                         <label for="endereco">Endereço</label>
-                        <input type="text" class="form-control" name="endereco">              
+                        <input type="text" class="form-control" name="endereco">
                     </div>
                     <div class="form-group">
                         <label for="telefone">Telefone</label>
-                        <input type="text" class="form-control" name="telefone">              
+                        <input type="text" class="form-control" name="telefone">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email">              
+                        <input type="email" class="form-control" name="email">
                     </div>
                     <div class="form-group">
                         <label for="data_nascimento">Data de Nascimento</label>
-                        <input type="date" class="form-control" name="data_nascimento">              
+                        <input type="date" class="form-control" name="data_nascimento">
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-success" > 
-                        <a href="index.php" class="btn btn-info">Voltar</a>             
+                        <input type="submit" class="btn btn-success">
+                        <a href="index.php" class="btn btn-info">Voltar</a>
                     </div>
-                    
+
 
                 </form>
 
-                
+
             </div>
 
         </div>
 
     </div>
 
-    
+
 
 
 

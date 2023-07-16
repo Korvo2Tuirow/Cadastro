@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <?php include 'navbar.php'; ?>
     <header>
         <h1>Cadastro</h1>
     </header>

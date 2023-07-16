@@ -13,8 +13,7 @@
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-            Bootstrap
+          Sistema de teste em PHP e SQL
         </a>
         <a href="logout_script.php" class="btn btn-outline-dark" role="button">Logout</a>
     </nav>

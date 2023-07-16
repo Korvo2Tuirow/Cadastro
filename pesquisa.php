@@ -29,7 +29,7 @@ echo"<hr>";
 </head>
 
 <body>
-
+    <?php include 'navbar.php'; ?>
     <header class="container">
         <h1>Pesquisar Cadastros</h1>
     </header>
@@ -54,7 +54,7 @@ echo"<hr>";
                         <th scope="col">E-mail</th>
                         <th scope="col">Data de Nascimento</th>
                         <th scope="col" colspan="2"></th>
-                        
+
                     </tr>
                 </thead>
                 <tbody>
@@ -96,28 +96,28 @@ echo"<hr>";
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="modal_confirma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Confirmar Exclusão</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form action="excluir.php" method="POST"></form>
-        <p>Deseja realmente excluir?</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-        <input type="submit" class="btn btn-danger" value="Excluir">
-                </form>
-      </div>
+    <!-- Modal -->
+    <div class="modal fade" id="modal_confirma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirmar Exclusão</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="excluir.php" method="POST"></form>
+                    <p>Deseja realmente excluir?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <input type="submit" class="btn btn-danger" value="Excluir">
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
 
 

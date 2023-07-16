@@ -10,18 +10,19 @@
 
 <body>
 
-    <?php 
-
+    <?php
+    include 'navbar.php';
     include "conn.php";
-    $id =$_GET['id'] ?? '';
+
+    $id = $_GET['id'] ?? '';
     $slq = "SELECT * FROM pessoas WHERE cod_pessoa = $id";
     $dados = mysqli_query($conn, $slq);
 
     $linha = mysqli_fetch_assoc($dados);
 
-    
-    
-    
+
+
+
     ?>
 
 
@@ -36,45 +37,45 @@
                 <form action="edit_script.php" method="POST">
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <input type="text" class="form-control" name="nome" required value="<?php echo $linha['nome'];?>">              
+                        <input type="text" class="form-control" name="nome" required value="<?php echo $linha['nome']; ?>">
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" name="password"  value="<?php echo $linha['password'];?>">
+                        <input type="password" class="form-control" name="password" value="<?php echo $linha['password']; ?>">
                     </div>
                     <div class="form-group">
                         <label for="endereco">Endereço</label>
-                        <input type="text" class="form-control" name="endereco" value="<?php echo $linha['endereco'];?>">              
+                        <input type="text" class="form-control" name="endereco" value="<?php echo $linha['endereco']; ?>">
                     </div>
                     <div class="form-group">
                         <label for="telefone">Telefone</label>
-                        <input type="text" class="form-control" name="telefone" value="<?php echo $linha['telefone'];?>">              
+                        <input type="text" class="form-control" name="telefone" value="<?php echo $linha['telefone']; ?>">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email" value="<?php echo $linha['email'];?>">              
+                        <input type="email" class="form-control" name="email" value="<?php echo $linha['email']; ?>">
                     </div>
                     <div class="form-group">
                         <label for="data_nascimento">Data de Nascimento</label>
-                        <input type="date" class="form-control" name="data_nascimento" value="<?php echo $linha['data_nascimento'];?>">              
+                        <input type="date" class="form-control" name="data_nascimento" value="<?php echo $linha['data_nascimento']; ?>">
                     </div>
                     <div class="form-group">
-                        <input type="submit" class="btn btn-success"value="Salvar Alterações">
-                        <input type="hidden" name="id" value="<?php echo $linha['cod_pessoa']?>" />
-                        <a href="pesquisa.php" class="btn btn-info">Voltar</a>             
+                        <input type="submit" class="btn btn-success" value="Salvar Alterações">
+                        <input type="hidden" name="id" value="<?php echo $linha['cod_pessoa'] ?>" />
+                        <a href="pesquisa.php" class="btn btn-info">Voltar</a>
                     </div>
-                    
+
 
                 </form>
 
-                
+
             </div>
 
         </div>
 
     </div>
 
-    
+
 
 
 
