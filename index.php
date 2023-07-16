@@ -1,3 +1,15 @@
+<?php 
+session_start();
+if(isset($_SESSION['adm'])){
+        echo "okaay";
+}else{
+  echo "sem sessão";
+};
+
+
+?>
+
+
 <!doctype html>
 <html lang="pt-br">
 
