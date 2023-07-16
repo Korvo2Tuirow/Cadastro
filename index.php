@@ -21,6 +21,10 @@ if(isset($_SESSION['adm'])){
 </head>
 
 <body>
+
+<?php 
+include 'navbar.php';
+?>
     <header class="container">
         <h1>CRUD PHP MYSQl</h1>
     </header>

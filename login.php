@@ -1,9 +1,6 @@
 <?php
 include "conn.php";
 session_start();
-if (isset($_SESSION['adm'])) {
-    session_destroy();
-};
 
 if (isset($_POST['email']) || isset($_POST['senha'])) {
     if (strlen($_POST['email']) == 0) {
@@ -53,6 +50,8 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 </head>
 
 <body>
+
+
     <header class="container">
         <h1>Login</h1>
     </header>
