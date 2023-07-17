@@ -37,8 +37,8 @@ include 'navbar.php';
                     <p class="lead">Sistema simplificado de cadastro com PHP e MySQL</p>
                     <hr class="my-4">
 
-                    <a class="btn btn-primary btn-lg" href="cadastro.php" role="button">Cadastrar</a>
-
+                   <!-- <a class="btn btn-primary btn-lg" href="cadastro.php" role="button">Cadastrar</a>
+                    -->
                     <a class="btn btn-primary btn-lg" href="pesquisa.php" role="button">Pesquisar</a>
                 </div>
             </div>
