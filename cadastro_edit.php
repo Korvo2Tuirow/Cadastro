@@ -1,11 +1,9 @@
 
 <?php 
 include "protect.php";
-
-    
-
-
-
+if($_SESSION['adm']!=='1'){
+    header("Location: pesquisa.php");
+};
 
 
 ?>
