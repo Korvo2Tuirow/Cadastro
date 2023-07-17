@@ -44,7 +44,7 @@
                     </div>
                     <div class="form-group">
                         <input type="submit" class="btn btn-success">
-                        <a href="index.php" class="btn btn-info">Voltar</a>
+                        <a href="home.php" class="btn btn-info">Voltar</a>
                     </div>
 
 

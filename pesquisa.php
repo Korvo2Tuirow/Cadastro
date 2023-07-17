@@ -90,7 +90,7 @@ echo"<hr>";
 
 
         </div>
-        <a href="index.php" class="btn btn-info">Voltar</a>
+        <a href="home.php" class="btn btn-info">Voltar</a>
 
     </div>
 

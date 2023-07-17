@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -39,7 +39,7 @@
 
             ?>
 
-            <a href="index.php" class="btn btn-primary">Voltar</a>
+            <a href="home.php" class="btn btn-primary">Voltar</a>
         </div>
 
     </div>
