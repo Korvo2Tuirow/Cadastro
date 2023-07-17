@@ -1,5 +1,5 @@
-<?php
-
+<?php 
+include "protect.php";
 include "conn.php";
 
 $pesquisa = $_POST['busca'] ?? '';
@@ -78,10 +78,12 @@ echo"<hr>";
                               <td>$endereco</td>
                               <td>$telefone</td>
                               <td>$email</td>
-                              <td>$data_nascimento</td>
-                              <td><a href='cadastro_edit.php?id=$id' class='btn btn-success'>Editar</a></td>
-                              <td><a href='#' class='btn btn-danger' data-toggle='modal' data-target='#modal_confirma'>Excluir</a></td>
-                              </tr>";
+                              <td>$data_nascimento</td>";
+                              if($_SESSION['adm'] == '1'){
+                                echo"<td><a href='cadastro_edit.php?id=$id' class='btn btn-success'>Editar</a></td>
+                              <td><a href='#' class='btn btn-danger' data-toggle='modal' data-target='#modal_confirma'>Excluir</a></td>";
+                              };
+                              echo"</tr>";
                     };
 
                     ?>

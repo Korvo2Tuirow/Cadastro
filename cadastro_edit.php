@@ -1,3 +1,14 @@
+
+<?php 
+include "protect.php";
+
+    
+
+
+
+
+
+?>
 <!doctype html>
 <html lang="pt-br">
 
@@ -11,8 +22,9 @@
 <body>
 
     <?php
-    include 'navbar.php';
+    include "navbar.php";
     include "conn.php";
+    
 
     $id = $_GET['id'] ?? '';
     $slq = "SELECT * FROM pessoas WHERE cod_pessoa = $id";

@@ -1,20 +1,21 @@
+
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login</title>
+    <title></title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+        <p class="navbar-brand" href="#">
           Sistema de teste em PHP e SQL
-        </a>
+        </p>
+        
         <a href="logout_script.php" class="btn btn-outline-dark" role="button">Logout</a>
     </nav>
 

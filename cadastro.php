@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt_br">
 
 <head>
     <meta charset="utf-8">
@@ -9,7 +9,14 @@
 </head>
 
 <body>
-    <?php include 'navbar.php'; ?>
+
+    <nav class="navbar navbar-light bg-light">
+        <p class="navbar-brand" href="#">
+            Sistema de teste em PHP e SQL
+        </p>
+
+
+    </nav>
     <header class="container">
         <h1>Cadastro</h1>
     </header>
@@ -44,7 +51,7 @@
                     </div>
                     <div class="form-group">
                         <input type="submit" class="btn btn-success">
-                        <a href="home.php" class="btn btn-info">Voltar</a>
+                        <a href="index.php" class="btn btn-info">Voltar</a>
                     </div>
 
 

@@ -2,6 +2,8 @@
 include "conn.php";
 session_start();
 
+
+
 if (isset($_POST['email']) || isset($_POST['senha'])) {
     if (strlen($_POST['email']) == 0) {
         echo "<script> alert('Preencha seu E-mail');</script>";
@@ -20,10 +22,11 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
         if ($quantidade == 1 && $resp['email'] === $email && $resp['password'] === $senha) {
 
-            if ($resp['adm'] == 1) {
-
-                $_SESSION['adm'] = 1;
+            if (!isset($_SESSION)) {
+                session_start();
             };
+            $_SESSION['nome'] = $resp['nome'];
+            $_SESSION['adm'] = $resp['adm'];
 
             header('location: home.php');
         } else {

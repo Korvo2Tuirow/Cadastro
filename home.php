@@ -1,10 +1,7 @@
 <?php 
-session_start();
-if(isset($_SESSION['adm'])){
-        echo "Logado como admin";
-}else{
-  echo "Usuario padrão";
-};
+
+
+include "protect.php";
 
 
 ?>

@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -17,7 +19,7 @@
     <div class="container">
         <div class="row">
             <?php
-
+            
             include "conn.php";
 
             $nome = $_POST['nome'];
@@ -39,7 +41,7 @@
 
             ?>
 
-            <a href="home.php" class="btn btn-primary">Voltar</a>
+            <a href="index.php" class="btn btn-primary">Voltar</a>
         </div>
 
     </div>
