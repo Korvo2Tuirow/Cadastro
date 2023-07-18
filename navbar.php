@@ -12,6 +12,7 @@
 <body>
 
     <nav class="navbar navbar-light bg-light">
+        <img src="imagens/vincentcrow_0.jpg" alt="logo" class="navbar-brand" width="auto" height="70">
         <p class="navbar-brand" href="#">
           Sistema de teste em PHP e SQL
         </p>

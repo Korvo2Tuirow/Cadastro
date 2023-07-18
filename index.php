@@ -50,10 +50,19 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
 <body>
+     <nav class="navbar navbar-light bg-light">
+    <img src="imagens/vincentcrow_0.jpg" alt="logo" class="navbar-brand" width="auto" height="70">
+        <p class="navbar-brand" href="#">
+            Sistema de teste em PHP e SQL
+        </p>
+
+
+    </nav>
 
     <div class="login">
 
@@ -73,9 +82,9 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
             <input type="password" name="senha">
 
 
-            <input type="submit" value="Entrar">
+            <input type="submit" value="Entrar" class="mt-4 btn-success">
 
-            <a href="cadastro.php"> <input type="button" value="Cadastrar">
+            <a href="cadastro.php"> <input type="button" value="Cadastrar" class="btn-info">
             </a>
     </div>
 
@@ -83,6 +92,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
 
 
+  
 
 
 

@@ -55,11 +55,12 @@ input {
     height: 30px;
     padding-left: 5px;
 }
-
+/*
 input[type="submit"] {
     margin: auto;
-    font-size: 15px;
+    font-size: 55px;
     cursor: pointer;
+   
 
 }
 
@@ -70,4 +71,4 @@ input[type="button"] {
     cursor: pointer;
 
 
-}
+}*/
