@@ -81,7 +81,7 @@ echo"<hr>";
                               <td>$data_nascimento</td>";
                         if ($_SESSION['adm'] == '1') {
                             echo "<td><a href='cadastro_edit.php?id=$id' class='btn btn-success'>Editar</a></td>
-                              <td><a href='#' class='btn btn-danger' data-toggle='modal' data-target='#modal_confirma' >Excluir</a></td>";
+                              <td><a href='#' class='btn btn-danger' data-toggle='modal' data-target='#modal_confirma'onclick=".'"'."pegardados('$id','$nome')".'"'.">Excluir</a></td>";
                         };
                         echo "</tr>";
                     };
@@ -110,32 +110,29 @@ echo"<hr>";
                     </button>
                 </div>
                 <div class='modal-body'>
-                    <p>Deseja realmente excluir?</p>
+                    <p>Deseja realmente excluir?</p><p id='nome_pessoa'></p>
                 </div>
                 <div class='modal-footer'>
                     <button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button>
 
                     <form action='excluir.php' method='POST'>
-                 
+                    <input type='hidden' name='id' id='id'value=''>
                     <input type='submit' class='btn btn-danger' value='Excluir'>
                     </form>
                 </div>
             </div>
         </div>
     </div>";
-
-    
-
     };
 
 
     ?>
 
-   
 
 
-
+    <script src="js/javascript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
+
 </html>
