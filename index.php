@@ -87,9 +87,10 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
             <a href="cadastro.php"> <input type="button" value="Cadastrar" class="btn-info mt-3">
             </a>
-    </div>
+        
 
-    </form>
+        </form>
+    </div>
 
 
 
