@@ -74,15 +74,16 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
         <form action="" method="POST">
 
-            <label for="email">E-mail</label>
-            <input type="text" name="email">
+            <label for="email" class="mb-0">E-mail</label>
+            <input type="text" name="email" class="mb-2">
 
 
-            <label for="senha">Senha</label>
-            <input type="password" name="senha">
+            <label for="senha" class="mb-0">Senha</label>
+            <input type="password" name="senha" id="senha">
+            <p class="mb-0" id="btn-senha" onclick="verSenha()">Mostrar Senha</p>
 
 
-            <input type="submit" value="Entrar" class="mt-4 btn-success">
+            <input type="submit" value="Entrar" class="mt-3 btn-success">
 
             <a href="cadastro.php"> <input type="button" value="Cadastrar" class="btn-info mt-3">
             </a>
@@ -98,6 +99,6 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
 
 
-
+    <script src="js/javascript.js"></script>
 </body>
 </html>
