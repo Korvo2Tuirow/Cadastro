@@ -81,7 +81,7 @@ echo"<hr>";
                               <td>$data_nascimento</td>";
                         if ($_SESSION['adm'] == '1') {
                             echo "<td><a href='cadastro_edit.php?id=$id' class='btn btn-success'>Editar</a></td>
-                              <td><a href='#' class='btn btn-danger' data-toggle='modal' data-target='#modal_confirma'>Excluir</a></td>";
+                              <td><a href='#' class='btn btn-danger' data-toggle='modal' data-target='#modal_confirma' >Excluir</a></td>";
                         };
                         echo "</tr>";
                     };
@@ -98,33 +98,41 @@ echo"<hr>";
 
     <?php
     if ($_SESSION['adm'] == '1') {
-        echo '
-        <!-- Modal -->
-    <div class="modal fade" id="modal_confirma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Confirmar Exclusão</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+        echo "
+               <!-- Modal -->
+    <div class='modal fade' id='modal_confirma' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+        <div class='modal-dialog'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title' id='exampleModalLabel'>Confirmar Exclusão</h5>
+                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <form action="excluir.php" method="POST"></form>
+                <div class='modal-body'>
                     <p>Deseja realmente excluir?</p>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <input type="submit" class="btn btn-danger" value="Excluir">
+                <div class='modal-footer'>
+                    <button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button>
+
+                    <form action='excluir.php' method='POST'>
+                 
+                    <input type='submit' class='btn btn-danger' value='Excluir'>
                     </form>
                 </div>
             </div>
         </div>
-    </div>';
+    </div>";
+
+    
+
     };
 
 
     ?>
+
+   
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

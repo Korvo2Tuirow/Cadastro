@@ -84,7 +84,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
 
             <input type="submit" value="Entrar" class="mt-4 btn-success">
 
-            <a href="cadastro.php"> <input type="button" value="Cadastrar" class="btn-info">
+            <a href="cadastro.php"> <input type="button" value="Cadastrar" class="btn-info mt-3">
             </a>
     </div>
 
