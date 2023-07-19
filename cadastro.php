@@ -31,25 +31,26 @@
                         <input type="text" class="form-control" name="nome" required>
                     </div>
                     <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" required>
+                    </div>
+                    <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control" id="senha" name="password">
+                        <input type="password" class="form-control" id="senha" name="password" required>
                         <div class="btn btn-danger mt-2" id="btn-senha" onclick="verSenha()">Visualizar Senha</div>
                     </div>
                     <div class="form-group">
                         <label for="endereco">Endereço</label>
-                        <input type="text" class="form-control" name="endereco">
+                        <input type="text" class="form-control" name="endereco" required>
                     </div>
                     <div class="form-group">
                         <label for="telefone">Telefone</label>
-                        <input type="text" class="form-control" name="telefone">
+                        <input type="text" class="form-control" name="telefone" required>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email">
-                    </div>
+                   
                     <div class="form-group">
                         <label for="data_nascimento">Data de Nascimento</label>
-                        <input type="date" class="form-control" name="data_nascimento">
+                        <input type="date" class="form-control" name="data_nascimento" required>
                     </div>
                     <div class="form-group">
                         <input type="submit" class="btn btn-success">
