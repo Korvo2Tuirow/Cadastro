@@ -11,13 +11,21 @@
 
 <body>
 
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light mr-auto">
         <img src="imagens/vincentcrow_0.jpg" alt="logo" class="navbar-brand" width="auto" height="70">
-        <p class="navbar-brand" href="#">
-          Sistema de teste em PHP e SQL
+        <p class="p-2 bd-highlight  mr-3" href="#">
+            Sistema de teste em PHP e SQL
         </p>
         
+        <div class="d-flex flex-row bd-highlight">
+        <p class="p-2 bd-highlight m-0 mr-3">
+        <?php         
+        echo "<strong>".$_SESSION['nome']."</strong>";
+        ?>    
+    
+        </p>
         <a href="logout_script.php" class="btn btn-outline-dark" role="button">Logout</a>
+        </div>
     </nav>
 
 

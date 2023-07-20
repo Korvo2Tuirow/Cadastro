@@ -35,7 +35,7 @@
                         <input type="email" class="form-control" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
+                        <label for="password">Senha</label>
                         <input type="password" class="form-control" id="senha" name="password" required>
                         <div class="btn btn-danger mt-2" id="btn-senha" onclick="verSenha()">Visualizar Senha</div>
                     </div>

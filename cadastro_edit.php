@@ -54,7 +54,7 @@ if($_SESSION['adm']!=='1'){
                         <input type="email" class="form-control" name="email" value="<?php echo $linha['email']; ?>">
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
+                        <label for="password">Senha</label>
                         <input type="password" class="form-control" id="senha" name="password" value="<?php echo $linha['password']; ?>">
                         <div class="btn btn-danger mt-2" id="btn-senha" onclick="verSenha()">Visualizar Senha</div>
                     </div>
