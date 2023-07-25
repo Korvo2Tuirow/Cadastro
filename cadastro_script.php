@@ -43,7 +43,7 @@
                 };
             }else{
                 if(mysqli_query($conn, $sql)){
-                    mensagem("$nome Cadastro realizado com sucesso!", 'sucess');
+                    mensagem("$nome Cadastro realizado com sucesso!", 'success');
                 }else {
                     mensagem("$nome Não cadastrado!", 'dunger');
                 };
