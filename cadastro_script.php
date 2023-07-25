@@ -33,11 +33,23 @@
                 (`nome`, `password`, `endereco`, `telefone`, `email`, `data_nascimento`) 
                 VALUES ('$nome','$password','$endereco','$telefone','$email','$data_nascimento')";
 
-            if (mysqli_query($conn, $sql)) {
-                mensagem("$nome cadastrado com sucesso!", 'success');
-            } else {
-                mensagem("$nome Não cadastrado!", 'dunger');
+            $duplicado = "SELECT email FROM pessoas WHERE email = '$email'";
+
+            if (mysqli_query($conn, $duplicado)) {
+                mensagem("Email já exixtente", 'dunger');
+                
+                if(isset($_SESSION)){
+                    session_destroy();
+                };
+            }else{
+                if(mysqli_query($conn, $sql)){
+                    mensagem("$nome Cadastro realizado com sucesso!", 'sucess');
+                }else {
+                    mensagem("$nome Não cadastrado!", 'dunger');
+                };
             };
+            
+            
 
             ?>
 
